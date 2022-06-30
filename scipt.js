@@ -141,3 +141,10 @@ document.querySelector("#addInfo").addEventListener('click',()=>{
     </div>
     `;
 })
+
+document.querySelector("#okcheck").addEventListener('click',()=>{
+    if(document.querySelector("#okcheck").checked)
+    document.querySelector("#submitBTN").disabled = false;
+    else
+    document.querySelector("#submitBTN").disabled = true;
+})
