@@ -8,6 +8,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
 	crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+	ntegrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css">
 	<title>Form</title>
 </head>
@@ -17,8 +20,8 @@
 
     <div class="row">
 		<h4>Data Form</h4>
-		Dark Mode
-		<input type="checkbox" id="toggle">
+		Temp Dark Mode
+		<input type="checkbox" class="mx-1" id="toggle">
 		<form action="#" class="d-flex justify-content-center" method="post">
 
 			<div class="col-12 col-md-10 my-2">
@@ -75,7 +78,7 @@
 					<h5>Education</h5>
 					</div>
 
-					<h6>Graduation college details</h6>
+					<div class="titleBox"><h6>Graduation college details</div>
 
 						<div class="col-12 inputStyle col-md-6">
 						<label for="college"> College Name<span>*</span>  </label>
@@ -103,11 +106,11 @@
 						</div>
 
 						<div class="col-12 inputStyle col-md-6">
-						<label for="achievements"> Achievements<span>(if any)</span> </label>
-						<textarea name="achievements" id="input class=" rows="1" placeholder="i) Get 1 rank in 4th sem ii) Win hackathon in college."></textarea>
+						<label for="achievements"> Achievements<span>( if any )</span> </label>
+						<textarea name="achievements"  class="" rows="1" placeholder="i) Get 1 rank in 4th sem ii) Win hackathon in college."></textarea>
 						</div>
 
-					<h6>High school details</h6>
+				<div class="titleBox"><h6>High school details</div>
 
 						<div class="col-12 inputStyle col-md-6">
 						<label for="school"> School Name<span>*</span>  </label>
@@ -137,62 +140,62 @@
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="linkedin"> Linkedin<span>(Url)</span> </label>
-						<input   type="url" placeholder="https://www.linkedin.com/in/.." name="linkedin" id="linkedin">
+						<label for="linkedin"> Linkedin<span>( Url ) </span> </label>
+						<input   type="url" required placeholder="https://www.linkedin.com/in/.." name="linkedin" id="linkedin">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="instagram"> Instagram<span>(Url)</span> </label>
-						<input   type="url" placeholder="https://www.instagram.com/.." name="instagram" id="instagram">
+						<label for="instagram"> Instagram<span>( Url ) </span> </label>
+						<input   type="url" required placeholder="https://www.instagram.com/.." name="instagram" id="instagram">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="twitter"> twitter<span>(Url)</span> </label>
+						<label for="twitter"> twitter<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.twitter.com/.." name="twitter" id="twitter">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="facebook"> Facebook<span>(Url)</span> </label>
+						<label for="facebook"> Facebook<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.facebook.com/people/.." name="facebook" id="facebook">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="medium"> Medium<span>(Url)</span> </label>
+						<label for="medium"> Medium<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.user.medium.com/" name="medium" id="medium">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="github"> Github<span>(Url)</span> </label>
+						<label for="github"> Github<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.github.com/.." name="github"  id="github">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="hackerrank"> Hackerrank<span>(Url)</span> </label>
+						<label for="hackerrank"> Hackerrank<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.hackerrank.com/.." name="hackerrank"  id="hackerrank">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="codeforces"> Codeforces<span>(Url)</span> </label>
+						<label for="codeforces"> Codeforces<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://codeforces.com/profile/.." name="codeforces"  id="codeforces">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="codechef"> Codechef<span>(Url)</span> </label>
+						<label for="codechef"> Codechef<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.codechef.com/user/.." name="codechef"  id="codechef">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="atcoder"> Atcoder<span>(Url)</span> </label>
+						<label for="atcoder"> Atcoder<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://atcoder.jp/users/.." name="atcoder"  id="atcoder">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="stopstalk"> stopstalk<span>(Url)</span> </label>
+						<label for="stopstalk"> stopstalk<span>( Url ) </span> </label>
 						<input   type="url" placeholder="https://www.stopstalk.com/user/profile/.." name="stopstalk"  id="stopstalk">
 					</div>
 
 					<div class="col-12 inputStyle col-md-6">
-						<label for="portfolio"> Personal portfolio<span>(Url)</span> </label>
+						<label for="portfolio"> Personal portfolio<span>( Url ) </span> </label>
 						<input   type="url" placeholder="eg: https://portfolio.user.me" name="portfolio"  id="portfolio">
 					</div>
 
@@ -210,7 +213,7 @@
 
 					<div class="col-12 inputStyle">
 						<label for="brief"> Breif introduction<span>*</span> </label>
-						<textarea name="brief" id="input class=" rows="1" required placeholder="i) Get 1 rank in 4th sem ii) Win hackathon in college."></textarea>
+						<textarea name="brief"  class="" rows="1" required placeholder="i) Get 1 rank in 4th sem ii) Win hackathon in college."></textarea>
 					</div>
 
 				</section>
@@ -218,39 +221,12 @@
 				<section class="row box-section">
 					<div class="col-12 addDetail">
 					<h5>Working experience / volunteer</h5>
-					<div class="btnAdd" id="addExp">Add More</div>
+					<div class="btnAdd" id="addExp"> <i class="fa-solid fa-plus"></i> Add </div>
 					</div>
 					
 					<div class="col-12" id="expSec">
 
-						<div class="row">
-							<h6>Experience 1 </h6>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="titleExp1"> Firm Name </label>
-								<input   type="text" placeholder="xyz firm" name="titleExp1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="designationExp1"> Designation </label>
-								<input   type="text" placeholder="SDE intern" name="designationExp1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="timeExp1"> Time Span </label>
-								<input   type="text" placeholder="22 june 2022 - present" name="timeExp1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="techExp1"> Technology experience </label>
-								<input   type="text" placeholder="nodeJS , reactjs , mongoose , JavaScript" name="techExp1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="descrpExp1"> Description </label>
-								<input   type="text" placeholder="My work is to improve efficiency of backend server and implement new features." name="descrpExp1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="linkExp1"> Any link to share </label>
-								<input   type="url" placeholder="eg: https://My-Work-Is-This.com" name="linkExp1" >
-							</div>
 
-						</div>
 					</div>
 					
 				</section>
@@ -258,73 +234,48 @@
 				<section class="row box-section">
 					<div class="col-12 addDetail">
 					<h5>Projects</h5>
-					<div class="btnAdd" id="addPro">Add More</div>
+					<div class="btnAdd" id="addPro"> <i class="fa-solid fa-plus"></i> Add </div>
 					</div>	
 
 					
 					<div class="col-12" id="projectSec">		
 		
-						<div class="row">
-							<h6>Project 1</h6>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="titlePro1"> Project Name </label>
-								<input   type="text" placeholder="CP Calender" name="titlePro1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="timePro1"> Time Span </label>
-								<input   type="text" placeholder="30 jan 2022 - 24 feb 2022" name="timePro1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="techPro1"> Technology Used </label>
-								<input   type="text" placeholder="nodeJS , reactjs , mongoose , JavaScript" name="techPro1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="descrpPro1"> Description </label>
-								<input   type="text" placeholder="show details related upcoming CP Contests" name="descrpPro1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="linkPro1"> Any link to share </label>
-								<input   type="url" placeholder="eg: https://My-Is-My-Project.com" name="linkPro1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="gitPro1"> Github Repo </label>
-								<input   type="url" placeholder="eg: https://github.com/getlost01/cp-contest-calender" name="gitPro1" >
-							</div>
-
-						</div>
 					</div>
 					
 				</section>
 
+
+				<section class="row box-section">
+					<div class="col-12 addDetail">
+					<h5>Skills</h5>
+					</div>	
+
+					<div class="col-12" id="skillSec">		
+		
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 inputStyle">
+								<label for="titleCer"> Skills </label>
+								<textarea name="titleCer"  class="" rows="1" required placeholder="Please write skill separated by commas: HTML , CSS , JavaScript , Java"></textarea>
+							</div>
+						</div>
+
+					</div>
+					
+				</section>
+
+
+
 				<section class="row box-section">
 					<div class="col-12 addDetail">
 					<h5>Certificates</h5>
-					<div class="btnAdd" id="addCer">Add More</div>
+					<div class="btnAdd" id="addCer"> <i class="fa-solid fa-plus"></i> Add </div>
 					</div>	
 
 					
 					<div class="col-12" id="certifySec">		
 		
-						<div class="row">
-							<h6>Certificate 1</h6>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="titleCer1"> Certificate Name </label>
-								<input   type="text" placeholder="Front-End Web UI Frameworks and Tools" name="titleCer1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="issCer1"> Issued By </label>
-								<input   type="text" placeholder="Coursera" name="issCer1">
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="descrpCer1"> Description </label>
-								<input   type="text" placeholder="For learning front end development." name="descrpCer1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="linkCer1"> Any link to share </label>
-								<input   type="url" placeholder="eg: https://My-Is-My-Certificate.com" name="linkCer1" >
-							</div>
+						
 
-						</div>
 					</div>
 					
 				</section>
@@ -332,32 +283,12 @@
 				<section class="row box-section">
 					<div class="col-12 addDetail">
 						<h5>Achievements / Honors</h5>
-						<div class="btnAdd" id="addHon">Add More</div>
+						<div class="btnAdd" id="addHon"> <i class="fa-solid fa-plus"></i> Add </div>
 					</div>	
 
 					
-					<div class="col-12" id="honorSec">					
-						<div class="row" >
+					<div class="col-12" id="honorSec">	
 
-							<h6>Achievement 1</h6>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="titleHon1"> Achievements name </label>
-								<input   type="text" placeholder="Get ranked 28 in conest by codechef." name="titleHon1">
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="recHon1"> Recognised by </label>
-								<input   type="text" placeholder="Codechef" name="recHon1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="descrpHon1"> Description </label>
-								<input   type="text" placeholder="In xyz contest I got 28 rank out of 1600+ students." name="descrpHon1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="linkHon1"> Any link to share </label>
-								<input   type="url" placeholder="eg: https://My-Is-My-Honor.com" name="linkHon1" >
-							</div>
-							
-						</div>
 					</div>
 					
 				</section>
@@ -365,31 +296,12 @@
 				<section class="row box-section">
 					<div class="col-12 addDetail">
 						<h5>Other Info</h5>
-						<div class="btnAdd" id="addInfo">Add More</div>
+						<div class="btnAdd" id="addInfo"> <i class="fa-solid fa-plus"></i> Add </div>
 					</div>
 
 					<div class="col-12" id="infoSec">		
 											
-						<div class="row" >
-							<h6>Info 1</h6>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="titleInfo1">  Info name </label>
-								<input   type="text" placeholder="I also like digital art." name="titleInfo1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="recInfo1"> Related to </label>
-								<input   type="text" placeholder="Content Creation" name="recInfo1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="descrpInfo1"> Description </label>
-								<input   type="text" placeholder="I have create 50+ digital art / posters for social media." name="descrpInfo1" >
-							</div>
-							<div class="col-12 inputStyle col-md-6">
-								<label for="linkInfo1"> Any link to share </label>
-								<input   type="url" placeholder="eg: https://My-Is-My-Art.com" name="linkInfo1" >
-							</div>
 
-						</div>
 					</div>
 					
 				</section>

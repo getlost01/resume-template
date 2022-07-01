@@ -11,6 +11,7 @@
     --box-color: #fff;
     --primary-color: #474747;
     --primary-color-light: #f6f5ff;
+    --special-color: #0d6efd;
     --text-color: #000000;
     --text-color1: #ffffff;
     --sidebar-color: #fff;
@@ -22,12 +23,16 @@
     --tran-05: all 0.3s ease;
 }
 body.dark {
-    --body-color: #333333;
-    --box-color: rgb(0, 0, 0);
-    --primary-color: #202020;
+    --body-color: #404040;
+    --box-color: #252525;
+    --primary-color: rgb(0, 0, 0);
     --primary-color-light: #f6f5ff;
     --text-color: #ffffff;
     --text-color1: #ffffff;
+}
+::-webkit-calendar-picker-indicator {
+    background-color: white;
+    border-radius: 5px;
 }
 body{
     color: var(--text-color);
@@ -43,7 +48,7 @@ body{
     background: #00a6ff;
 }
 ::-webkit-scrollbar-thumb:hover{
-    transform: scale(0.95);
+    background-color: rgb(255, 85, 0);
 }
 h1,h2,h3,h4,h5,h6,input,.row,.col,input{
     margin:0;
@@ -57,14 +62,36 @@ h4{
     border: 1px solid #777;
     border-top: 0px;
 }
-h6{
-    padding: 5px;
-    text-align: center;
-    background-color: #0b5ed7;
+.titleBox{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.titleBox h6{
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: var(--special-color);
+    width:max-content;
     color: white;
-    position: relative;
-    top: 5px;
-    font-size: 12px;
+    font-size: 14px;
+}
+.titleBox h6 i{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 6px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgb(0, 0, 0);
+    transition: 0.3s all ease;
+}
+.titleBox h6 i:hover{
+    transform: scale(1.1);
+}
+.titleBox h6 i:active{
+    transform: scale(0.95);
 }
 label{
     user-select: none;
@@ -90,9 +117,10 @@ input[type="submit"]
 input[type="checkbox"]
 {
     width: auto;
+    cursor: pointer;
 }
 label span{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 80, 80);
 }
 .inputStyle{
     padding: 0 15px;
@@ -109,65 +137,62 @@ label span{
 }
 .inputStyle input,.inputStyle textarea{
     border-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
     border: 1px solid #777;
 }
 
 .addDetail{
     border-bottom: 1px solid #777;
-    padding: 10px;
+    padding: 15px 20px;
     background-color: var(--primary-color);
     display: flex; 
     font-size: 16px;
+    user-select: none;
     /* text-shadow: 1px 1px #777; */
     justify-content: space-between; 
     color: var(--text-color1);
 }
 .box-section{
-    border: 1px solid #777;
-    margin: 20px 0;
-    padding-bottom: 10px ;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-radius: 5px;
+    /* border: 1px solid #777; */
+    margin: 30px 0;
+    padding-bottom: 20px ;
+    border-radius: 15px;
     overflow: hidden;
-    border-bottom: 3px solid #777;
     background-color: var(--box-color);
-    box-shadow: 1px 1px 2px #777;
+    box-shadow: 0px 2px 5px #777;
 }
 input:invalid,textarea:invalid{
-    border-right: 3px solid red;
+    border-right: 4px solid rgb(228, 66, 38);
 }
 input:valid,textarea:valid{
-    border-right: 3px solid rgb(50, 255, 91);
+    border-right: 4px solid rgb(37, 194, 68);
 }
 input[type="submit"]:valid,input[type="submit"]:invalid{
     border: 1px solid #777;
 }
 .btnAdd{
-    padding: 2px 6px;
-    font-size: 14px;
+    padding: 4px 15px;
+    font-size: 15px;
+    font-weight: bolder;
 }
 input[type="submit"],.btnAdd{
     user-select: none;
     cursor: pointer;
     outline: 0;
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: var(--special-color);
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
     border: 1px solid transparent;
-    border-radius: .25rem;
+    border-radius: 5px ;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 input[type="submit"]:hover ,.btnAdd:hover {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background-color: #0083e1;
+    border:1px solid #ffffff;
+    transform: scale(1.04);
 }
 input[type="submit"]:active ,.btnAdd:active{
     transform: scale(0.96);
