@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --body-color: #f4f7ff;
+    --box-color: #fff;
+    --primary-color: #474747;
+    --primary-color-light: #f6f5ff;
+    --special-color: #0d6efd;
+    --text-color: #000000;
+    --text-color1: #ffffff;
+    --sidebar-color: #fff;
+    --toggle-color: #ddd;
+   /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.body_dark {
+    --body-color: #404040;
+    --box-color: #252525;
+    --primary-color: rgb(0, 0, 0);
+    --primary-color-light: #f6f5ff;
+    --text-color: #ffffff;
+    --text-color1: #ffffff;
+}
+::-webkit-calendar-picker-indicator {
+    background-color: white;
+    border-radius: 5px;
+}
+.body{
+    color: var(--text-color);
+    background-color: var(--body-color);
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #00a6ff;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 85, 0);
+}
+h1,h2,h3,h4,h5,h6,input,.row,.col,input{
+    margin:0;
+    padding:0;
+}
+h4{
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--text-color1);
+    border: 1px solid #777;
+    border-top: 0px;
+}
+.titleBox{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.titleBox h6{
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: var(--special-color);
+    width:max-content;
+    color: white;
+    font-size: 14px;
+}
+.titleBox h6 i{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 6px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgb(0, 0, 0);
+    transition: 0.3s all ease;
+}
+.titleBox h6 i:hover{
+    transform: scale(1.1);
+}
+.titleBox h6 i:active{
+    transform: scale(0.95);
+}
+label{
+    user-select: none;
+}
+input,textarea{
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--box-color);
+}
+input::placeholder,textarea::placeholder{
+    color: #888;
+}
+input[type="submit"]
+{
+    width: 150px;
+    margin: 10px 0 20px 0;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+input[type="checkbox"]
+{
+    width: auto;
+    cursor: pointer;
+}
+label span{
+    color: rgb(255, 80, 80);
+}
+.inputStyle{
+    padding: 0 15px;
+}
+.inputStyle label{
+    position:relative;
+    top: 10px;
+    font-size: 14px;
+    padding: 0 8px;
+    left: 10px;
+    font-weight: 500;
+    background-color: var(--box-color);
+    border-radius: 10px;
+}
+.inputStyle input,.inputStyle textarea{
+    border-radius: 5px;
+    border: 1px solid #777;
+}
+
+.addDetail{
+    border-bottom: 1px solid #777;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    display: flex; 
+    font-size: 16px;
+    user-select: none;
+    /* text-shadow: 1px 1px #777; */
+    justify-content: space-between; 
+    color: var(--text-color1);
+}
+.box-section{
+    /* border: 1px solid #777; */
+    margin: 30px 0;
+    padding-bottom: 20px ;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--box-color);
+    box-shadow: 0px 2px 5px #777;
+}
+input:invalid,textarea:invalid{
+    border-right: 4px solid rgb(228, 66, 38);
+}
+input:valid,textarea:valid{
+    border-right: 4px solid rgb(37, 194, 68);
+}
+input[type="submit"]:valid,input[type="submit"]:invalid{
+    border: 1px solid #777;
+}
+.btnAdd{
+    padding: 4px 15px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+input[type="submit"],.btnAdd{
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: var(--special-color);
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px ;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type="submit"]:hover ,.btnAdd:hover {
+    color: #fff;
+    background-color: #0083e1;
+    border:1px solid #ffffff;
+    transform: scale(1.04);
+}
+input[type="submit"]:active ,.btnAdd:active{
+    transform: scale(0.96);
+}
+
+
+
