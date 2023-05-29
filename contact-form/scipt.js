@@ -1,12 +1,3 @@
-var toggle = document.querySelector("#toggle");
-const body = document.querySelector("body");
-
-toggle.addEventListener('input',()=>{
-    if(body.classList.contains("dark"))
-    body.classList.remove("dark");
-    else
-    body.classList.add("dark");
-})
 
 var genId = 0;
 var genArray = [];
